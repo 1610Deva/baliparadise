@@ -1,0 +1,250 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 15px;
+}
+
+.carousel-item img{
+    filter: brightness(80%)
+}
+
+.paragraph{
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.paragraph--visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.history-image img{
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.history-text {
+    text-align: center;
+    color: white;
+    height: 100%;
+    padding: 60px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+}
+
+.history-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.history-text p{
+    font-size: 13px;
+}
+
+.healing{
+    padding-top: 50px;
+}
+
+
+.healing-text{
+    text-align: center;
+    color: white;
+    height: 100%;
+    padding: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+}
+
+
+.healing-text h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.healing-text p{
+    font-size: 13px;
+}
+
+.healing-image{
+    padding-right: 50px;
+}
+
+.healing-image img {
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px #000;
+    
+}
+
+
+
+.section-title h2{
+    padding-bottom: 15px;
+    border-bottom: solid #fff 2px;
+}
+
+
+.parent-img{
+    overflow: hidden;
+}
+
+.wrapper-img{
+    transition: all .3s ease;
+}
+
+.parent-img:hover .wrapper-img{
+    transform: scale(1.1);
+}
+
+.carousel-title{
+    margin-top: 2.7em; 
+    font-size: 55px;
+}
+
+/* Photo List Infinite */
+    .slider {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    .slider-track {
+        display: flex;
+        width: calc(250px * 11); /* Adjust based on the number of images */
+        animation: scroll 60s linear infinite;
+    }
+
+    .slide-items {
+        width: 250px; /* Adjust based on your image size */
+        flex-shrink: 0;
+    }
+
+    .slide-items img {
+        width: 100%;
+        display: block;
+    }
+
+    @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 11)); /* Adjust based on the number of images */
+    }
+    }
+
+/*Footer*/
+.footer-pages a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 1s ease;
+}
+
+.footer-social a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;    
+    transition: 1s ease;
+
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .history {
+        flex-direction: column;
+    }
+
+    .history-image, .history-text {
+        text-align: center;
+    }
+
+    .history-image {
+        padding-top: 0;
+    }
+
+    .history-text {
+        padding-top: 20px;
+    }
+
+    .row-cols-1 .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .history-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .history{
+        padding-top: 50px;
+    }
+
+    .history-text{
+        margin: 0;
+    }
+
+    .history-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .history-text p {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .healing-text{
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .healing{
+        padding-top: 5px;
+    }
+
+    .carousel-caption{
+        font-size: 12px;
+    }
+
+    .carousel-title{
+        margin-top: 1.5em;
+        font-size: 48px;
+    }
+
+    .healing-text p {
+        font-size: 1rem;
+    }
+
+    .healing-image{
+        padding-right: 0;
+    }
+
+    .healing-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-social{
+        padding-top: 20px;
+    }
+}
